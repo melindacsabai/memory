@@ -1,0 +1,156 @@
+body{
+    background-color: rgb(234, 243, 234);
+    padding: 2rem;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+$gridAreas : one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fithteen, sixteen;
+
+@each $grids in $gridAreas{
+    #d-#{$grids}{
+        grid-area: #{$grids};
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+}
+
+.board{
+    display: grid;
+    grid-template-areas:
+    " one two three four  " 
+    " five six seven eight " 
+    "nine ten eleven twelve " 
+    "thirteen fourteen fithteen sixteen";
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+    gap: 20px;
+    position: relative;;
+
+}
+
+
+.flip-card-inner.hide{
+    display: none;
+
+}
+
+.start{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+      
+  }
+.start-again{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    display: none;
+    top:0;
+    justify-content: center;
+    align-items: center;
+
+      
+  }
+.jatek{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top:0;
+    z-index: -4;
+      
+  }
+.btn{
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    color: rgb(55, 55, 55);
+    background-color: rgb(79, 178, 49);
+    font-weight: 800;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out 0s;
+    z-index: 40;
+   
+}
+.btn{
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        box-shadow:2px 2px 10px black;
+    }
+  
+}
+@mixin flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;   
+}
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+}
+@mixin play{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    text-transform:capitalize;
+    font-size: 20px;
+    font-weight: 300;
+   
+}
+
+
+.o,.t{
+    @include play;
+    margin: 0 auto;
+}
+@mixin playersButton{
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1.5px black;
+    color:whitesmoke;
+    width: 100px;
+    height: 100px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+p{
+    width: 100%;
+   text-align: center;
+}
+.again{
+    background-color: rgb(231, 154, 12);
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    text-transform: uppercase;
+    color: rgb(55, 55, 55);
+    font-weight: 800;
+    font-size: 20px;
+    transition: all 0.2s ease-in-out 0s;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        box-shadow:2px 2px 10px black;
+    }
+}

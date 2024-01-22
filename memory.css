@@ -1,0 +1,354 @@
+body {
+  background-color: rgb(234, 243, 234);
+  padding: 2rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#d-one {
+  grid-area: one;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-two {
+  grid-area: two;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-three {
+  grid-area: three;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-four {
+  grid-area: four;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-five {
+  grid-area: five;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-six {
+  grid-area: six;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-seven {
+  grid-area: seven;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-eight {
+  grid-area: eight;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-nine {
+  grid-area: nine;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-ten {
+  grid-area: ten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-eleven {
+  grid-area: eleven;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-twelve {
+  grid-area: twelve;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-thirteen {
+  grid-area: thirteen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-fourteen {
+  grid-area: fourteen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-fithteen {
+  grid-area: fithteen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#d-sixteen {
+  grid-area: sixteen;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.board {
+  display: grid;
+  grid-template-areas: " one two three four  " " five six seven eight " "nine ten eleven twelve " "thirteen fourteen fithteen sixteen";
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 150px);
+  gap: 20px;
+  position: relative;
+}
+
+.flip-card-inner.hide {
+  display: none;
+}
+
+.start {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-again {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  display: none;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.jatek {
+  width: 700px;
+  height: 700px;
+  position: absolute;
+  top: 0;
+  z-index: -4;
+}
+
+.btn {
+  height: 80px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  color: rgb(55, 55, 55);
+  background-color: rgb(79, 178, 49);
+  font-weight: 800;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out 0s;
+  z-index: 40;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+
+.o, .t {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+p {
+  width: 100%;
+  text-align: center;
+}
+
+.again {
+  background-color: rgb(231, 154, 12);
+  height: 80px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+  color: rgb(55, 55, 55);
+  font-weight: 800;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out 0s;
+}
+.again:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+}
+
+.one {
+  background-image: url(img/lion1.png);
+  background-position-y: -15px;
+  background-size: cover;
+}
+
+.two {
+  background-image: url(img/lion1.png);
+  background-position-y: -15px;
+  background-size: cover;
+}
+
+.three {
+  background-image: url(img/lb.png);
+  background-position: -12px;
+  background-size: cover;
+}
+
+.four {
+  background-image: url(img/snake.png);
+  background-position: -10px;
+  background-size: cover;
+}
+
+.five {
+  background-image: url(img/turtle.png);
+  background-size: 100%;
+  background-position-y: 25px;
+}
+
+.six {
+  background-image: url(img/lb.png);
+  background-position: -12px;
+  background-size: cover;
+}
+
+.seven {
+  background-image: url(img/turt.png);
+  background-position: -8px;
+  background-size: cover;
+}
+
+.eight {
+  background-image: url(img/turt.png);
+  background-position: -8px;
+  background-size: cover;
+}
+
+.nine {
+  background-image: url(img/turtle.png);
+  background-size: 100%;
+  background-position-y: 25px;
+}
+
+.ten {
+  background-image: url(img/leo.png);
+  background-position-y: 15px;
+  background-size: 100%;
+}
+
+.eleven {
+  background-image: url(img/snake.png);
+  background-position: -10px;
+  background-size: cover;
+}
+
+.twelve {
+  background-image: url(img/ship.png);
+  background-position-y: -10px;
+  background-size: cover;
+}
+
+.thirteen {
+  background-image: url(img/crock.png);
+  background-size: 100%;
+  background-position: -3px;
+}
+
+.fourteen {
+  background-image: url(img/leo.png);
+  background-position-y: 15px;
+  background-size: 100%;
+}
+
+.fithteen {
+  background-image: url(img/crock.png);
+  background-size: 100%;
+  background-position: -3px;
+}
+
+.sixteen {
+  background-image: url(img/ship.png);
+  background-position-y: -10px;
+  background-size: cover;
+}
+
+.board {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(0deg);
+}
+
+.selected.flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  border: 1px solid #929292;
+}
+
+.flip-card-front {
+  background-color: yellow;
+}
+
+.flip-card-back {
+  background-repeat: no-repeat;
+  transform: rotateY(180deg);
+}
+
+.opacity {
+  opacity: 1;
+}/*# sourceMappingURL=memory.css.map */
